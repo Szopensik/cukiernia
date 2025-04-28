@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #daaa74;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 650px;
+    height: 50px;
+    background-color: #673030;
+    margin: 0 auto; 
+  }
+  
+  nav a, nav p{
+    font-family: 'Irish Grover', cursive;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .cukiernia{
+    width: 650px;
+    height: 350px;
+    background-color: #9C6220;
+    margin: 0 auto;
+  }
+  .cukiernia p{
+    display: flex;
+    font-family: 'Irish Grover', cursive;
+    color: white;
+  }
+  .iri, .irish, .dol {
+    text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  }
+.irish{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+.iri{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    
+}
+.dol {
+    display: flex;
+    justify-content: center;
+    color: #2B0505;
+}
+.tlo1{
+  display: flex;
+  justify-content: center;
+margin: 0 auto;
+
+}
+.tlo1 img{
+  width: 650px;
+  height: 850px;}
+  .naglowek1 h1{
+    font-size: 40px;
+  }
+  .naglowek1 p{
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .naglowek1{
+    background-color: #9C6220;
+    width: 650px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px;
+    margin: 0 auto;
+    font-family: 'Itim', cursive;
+    color: white;
+  }
+  .tlo2{
+    display: flex;
+    justify-content: center;
+  margin: 0 auto;
+  
+  }
+  .tlo2 img{
+    width: 650px;
+    height: 450px;}
+
+    .onas{
+      background-color: #9C6220;
+      width: 650px;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 75px;
+      margin: 0 auto;
+      font-family: 'Itim', cursive;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .tlo3{
+      display: flex;
+      justify-content: center;
+    margin: 0 auto;
+    
+    }
+    .tlo3 img{
+      width: 650px;
+      height: 450px;}
+
+      .oferta{
+        background-color: #9C6220;
+        width: 650px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 75px;
+        margin: 0 auto;
+        font-family: 'Itim', cursive;
+        color: white;
+        font-size: 52px;
+        text-align: center;
+      }
+
+  footer{
+        background-color: #2B0505;
+        width: 650px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 75px;
+        margin: 0 auto;
+        font-family: 'Inria Serif', serif;
+        color: white;
+        text-align: center;
+        font-size: larger;
+      
+      }
