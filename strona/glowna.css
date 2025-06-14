@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
   }
+  html {
+  scroll-behavior: smooth;
+}
   body{
     background-color: #daaa74;
   }
@@ -15,8 +18,42 @@
     height: 50px;
     background-color: #673030;
     margin: 0 auto; 
+    position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
+  nav img{ width: 45px;}
+  .cukiernia {
+  background-image: url('tlo1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 700px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+.guzik {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Irish Grover', cursive;
+   background-color: #673030;
+   color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
   nav a, nav p{
     font-family: 'Irish Grover', cursive;
     color: white;
@@ -25,18 +62,20 @@
     font-size: 20px;
     text-decoration: none;
   }
+  
+  
   .cukiernia{
     width: 650px;
-    height: 350px;
+    height: 750px;
     background-color: #9C6220;
     margin: 0 auto;
   }
   .cukiernia p{
     display: flex;
     font-family: 'Irish Grover', cursive;
-    color: white;
+    
   }
-  .iri, .irish, .dol {
+  .iri, .irish {
     text-shadow:
     -1px -1px 0 #000,
      1px -1px 0 #000,
@@ -46,19 +85,32 @@
 .irish{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 0%;
     font-size: 50px;
+    color: white;
+    
 }
+.dol, .dol1 {
+    text-shadow:
+    -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;}
 .iri{
     display: flex;
     justify-content: center;
     font-size: 50px;
+    color: white;
     
 }
-.dol {
+.dol, .dol1 {
     display: flex;
     justify-content: center;
     color: #2B0505;
+    font-weight: bold;
+}
+.dol1{
+  padding-bottom: 120px;
 }
 .tlo1{
   display: flex;
@@ -76,6 +128,46 @@ margin: 0 auto;
     font-size: 26px;
     margin-top: 20px;
   }
+  
+  .oferta {
+  background-image: url(zdj1.png);
+  background-size: cover;
+  background-position: center;
+  width: 650px;
+  height: 450px;
+  padding: 75px;
+  margin: 0 auto;
+  font-family: 'Itim', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 52px;
+  text-align: center;
+}
+
+.oferta h2 {
+  margin-bottom: 30px;
+  margin-right: 200px;
+}
+
+.oferta-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 200px;
+}
+
+.oferta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.zdj {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
 
   .naglowek1{
     background-color: #9C6220;
@@ -95,14 +187,14 @@ margin: 0 auto;
   margin: 0 auto;
   
   }
-  .tlo2 img{
+  .tlo2 img{ 
     width: 650px;
     height: 450px;}
 
     .onas{
       background-color: #9C6220;
       width: 650px;
-      height: 450px;
+      height: 500px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -123,24 +215,66 @@ margin: 0 auto;
     .tlo3 img{
       width: 650px;
       height: 450px;}
+      .kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+.kontakt{
+  width: 650px;
+  display: flex;
+  margin: auto;
+  background-color: #9C6220;
+}
+.kontakt h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
 
-      .oferta{
-        background-color: #9C6220;
-        width: 650px;
-        height: 450px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 75px;
-        margin: 0 auto;
-        font-family: 'Itim', cursive;
-        color: white;
-        font-size: 52px;
-        text-align: center;
-      }
+.kontakt form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #673030;
+  padding: 30px;
+  border-radius: 12px;
+  
+}
+
+.kontakt label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.kontakt input,
+.kontakt textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kontakt button {
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
 
   footer{
-        background-color: #2B0505;
+         background-color: #673030;
         width: 650px;
         height: 150px;
         display: flex;

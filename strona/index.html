@@ -14,40 +14,71 @@
 </head>
 <body>
     <nav>
+        <a href="index.html"><img src="logo.png" alt="Logo naszej kawiarni"></a>
+        <a href="#cukier" class="nav-link">Strona główna</a>
         <a href="#onas" class="nav-link">O nas</a>
-        <a href="#my" class="nav-link">Dlaczego my?</a>
         <a href="#oferta" class="nav-link">Oferta</a>
         <a href="#kontakt" class="nav-link">Kontakt</a>
     </nav>
-<section class="cukiernia">
-    <p class="irish">Cukiernia</p>
-    <p class="iri">Sweet Dreams</p>
-    <p class="dol">Najlepsza cukiernia</p>
-    <p class="dol">w Lublinie!</p>
-</section>
-<section class="tlo1">
-<img src="tlo1.jpg" alt="obraz ciasta">
-</section>
-<section class="naglowek1" id="my">
-    <h1>Czemu jesteśmy najlepsi?</h1>
-    <p>-Nasze wypieki są pozbawione sztucznych barwników i konserwantów</p>
-<p>-Nasze pyszne ciasta i desery zachwycają każdego</p>
-<p>-Posiadamy w ofercie przepyszne sniadania</p>
-<p>-Działamy już od lat bez zmian naszych receptur</p>
-</section>
-<section class="tlo2">
-<img src="tlo2.png" alt="Jesteśmy z wami od dawna">
-</section>
-<section class="onas" id="onas">
-    <p>Cukiernia powstała w 1972 roku w Lublinie. Jest rodzinną firmą specjalizującą  się w produkcji różnego rodzaju wyrobów ciastkarskich, deserów, potrawy  śniadaniowych. Nasza cukiernia cieszy się dużym uznanie, klientów, którzy  bardzo chwalą wysokie walory smakowe, różnorodność dodatków i dekoracji.  Firma stosuje naturalne składniki bez konserwantów.</p>
-</section>
-<section class="tlo3">
-    <img src="tlo3.png" alt="Nasza Oferta">
+
+<section class="cukiernia" id="cukier">
+ <a href="menu.pdf" target="_blank"><button class="guzik">Sprawdź nasze menu</button></a> 
+  <p class="irish">Cukiernia</p>
+  <p class="iri">Sweet Dreams</p>
+  <p class="dol">Najlepsza cukiernia</p>
+  <p class="dol1">w Lublinie!</p>
 </section>
 
-<section  class="oferta" id="oferta">
-<p>W naszą ofertę wchodzą przeróżne ciasta i tory, kawy i herbaty, desery na ciepło i zimno a także zestawy sniedaniowe.</p>
+<section class="oferta" id="oferta">
+  <h2>Oferta</h2>
+  <div class="oferta-box">
+    <div class="oferta-item">
+      <img class="zdj" src="ikona1.png" alt="ikona kawy">
+      <p>Kawa</p>
+    </div>
+    <div class="oferta-item">
+      <img class="zdj" src="ikona2.png" alt="ikona owoca">
+      <p>Owoce</p>
+    </div>
+    <div class="oferta-item">
+      <img class="zdj" src="ikona3.png" alt="ikona słodyczy">
+      <p>Słodycze</p>
+    </div>
+  </div>
 </section>
+
+<section class="onas" id="onas">
+    <p>Cukiernia powstała w 1972 roku w Lublinie. Jest rodzinną firmą specjalizującą  się w produkcji różnego rodzaju wyrobów ciastkarskich, deserów, potrawy  śniadaniowych. Nasza cukiernia cieszy się dużym uznanie, klientów, którzy  bardzo chwalą wysokie walory smakowe, różnorodność dodatków i dekoracji.  Firma stosuje naturalne składniki bez konserwantów.</p>
+<p>Nasi cukiernicy uczyli się od mistrzów cukiernictwa z Francji!</p>
+</section>
+
+<section class="tlo2">
+<img src="kucharz.png" alt="Zdjęcie naszego kucharza">
+</section>
+
+<section class="kontakt">
+  <h2>Formularz kontaktowy</h2>
+  <form action="#" method="post">
+    <label for="name">Imię i nazwisko</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Adres e-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Telefon</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="message">Uwagi / Zapytanie</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Wyślij</button>
+  </form>
+</section>
+
+
+
+
+
 <footer id="kontakt">
     <h2>Kontakt</h2>
     <p>adres: ul. Cukiernicza 12, 20-111 Lublin  tel. (81) 444-33-11</p>
